@@ -1,4 +1,0 @@
-- include_vars: ../vars.yml
-- name: Install debian packages
-  apt: name={{ item }}
-  with_items: "{{ packages }}"
