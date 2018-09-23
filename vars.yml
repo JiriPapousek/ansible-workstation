@@ -1,0 +1,14 @@
+home: /home/papousek
+packages:
+  - chromium-browser
+  - gimp
+  - steam
+  - metasploit-framework
+  - vim
+  - virtualbox
+  - wireshark
+debs:
+  slack:
+    name: Slack
+    version: 3.1.0
+    url: https://downloads.slack-edge.com/linux_releases/slack-desktop-{{debs.slack.version}}-amd64.deb
