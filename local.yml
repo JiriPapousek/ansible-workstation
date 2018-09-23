@@ -6,4 +6,5 @@
       changed_when: False
 
   tasks:
+    - include: tasks/debs.yml
     - include: tasks/packages.yml 

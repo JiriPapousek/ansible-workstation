@@ -2,4 +2,3 @@
 - name: Install .deb files
   apt: deb={{ item.value.url }}
   with_dict: "{{ debs }}"
-  
