@@ -1,5 +1,8 @@
-- hosts: 127.0.0.1
+- hosts: localhost
   become: true
+  pre_tasks:
+    - name: update repositories
+      apt: update_cache=yes
+      changed_when: False
   tasks:
-  - name: Install vim
-    apt: name=vim
+    - include: tasks/packages.yml

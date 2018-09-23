@@ -1,0 +1,7 @@
+packages:
+  - chromium-browser
+  - neofetch
+  - vim
+  - virtualbox
+  - vlc
+  - wireshark
