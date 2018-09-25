@@ -1,5 +1,4 @@
 - hosts: localhost
-  include_vars: vars.yml
   become: true
   pre_tasks:
     - name: update repositories
