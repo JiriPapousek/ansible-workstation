@@ -1,9 +1,7 @@
 - include_vars: ../vars.yml
-
 - name: Download Slack
   command: "wget -0 /tmp/slack-desktop.deb {{ url }}"
   args:
     - creates: /tmp/slack-desktop.deb
-    
 - name: Install Slack
   command: "dpkg DEBIAN-FRONTEND=noninteractive /tmp/slack-desktop.deb"
