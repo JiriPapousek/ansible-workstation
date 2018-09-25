@@ -1,6 +1,6 @@
 - name: Download Slack
   command: "wget -0 /tmp/slack-desktop.deb {{ slack.url }}"
   args:
-    - creates: /tmp/slack-desktop.deb
+    - creates: "/tmp/slack-desktop.deb"
 - name: Install Slack
   command: "dpkg DEBIAN-FRONTEND=noninteractive /tmp/slack-desktop.deb"
