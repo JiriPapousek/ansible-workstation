@@ -1,4 +1,3 @@
-- include_vars: ../vars.yml
 - name: Download Slack
   command: "wget -0 /tmp/slack-desktop.deb {{ slack.url }}"
   args:
